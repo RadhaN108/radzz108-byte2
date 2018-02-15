@@ -45,27 +45,35 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+	<h1>About This Data Set</h1>
+	<h2>Quality</h2>
+        <p>Overall, the quality of the data set is a little questionable. The data seems like it may be skewed with dummy data (e.g. for schools that definitely reach the threshold of free and reduced lunch, they marked the as 100% instead of their actual percentage of free and reduced lunch. Another red flad was the completeness of the data set, I'm not convinced that all schools were
+        taken into account with this dataset because it seems like some counties may be missing. Otherwise, I would say the quality of the dataset is average to good, and I would like to spend more time looking into it.</p>
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>The data set looks pretty complete, there were a few rows that didn't have any data that were null or not filled out correctly. I corrected many of these in Trifacta either filling in a Boolean appropriately, or removing a few rows that seemed like outliers or mistakes in the way the data was being input. However overall, looking at the list of counties it's a pretty comprehensive list. I would be a little skeptical and would like to dig into it a little more to make sure that all schools and counties were accounted for, and if not...why?</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
+	<p>There was a good amount of work that had to go into making the data more coherent, and especially understanding the columns and some of the data types. 
+	The data is coherent in showing all the schools, which grades are available in those schools, and the distribution of free and / or reduced lunches. As I'll mention more below, one issue
+	that I was particularly concerned about was how many of the schools were marked as 100% free and reduced lunches (which is the data point I used for averages in my visualization.). I feel that this particular
+	data point is off, and was marked arbitrairly if the school was known to qualify for free and reduced lunches. I know this after looking up a few specific school's reports and seeing that schools that are consistently eligible seem to be marked higher. 
+	
+	Does it make sense relative to itself? Does it match your
 	expectations? Are the distributions sensible? What is your
 	evidence for this?</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
+	<p>The biggest concern that I have with the data provided is that some schools were marked as 100% free-and-reduced lunch. My inclination is that if the school was above a certain threshold in qualifying then they were just marked 100% for it. Considering that the visualization took an average of all the different schools' percentages, the information in the visualizations may be skewed towards higher percentages (especially for those that have multiple schools marked as 100%).
+	Outside of this, the data seemed mostly correct in answering which counties had the highest percentages of free and reduced lunch. 
+	What aspects of this data can you verify? How did you do so? What did
 	you find?</p>
       </div>
 
